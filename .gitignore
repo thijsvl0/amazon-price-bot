@@ -1,0 +1,6 @@
+.env
+bin
+__pycache__
+lib
+main.db
+sitecustomize.py
