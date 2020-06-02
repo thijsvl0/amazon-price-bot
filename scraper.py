@@ -23,7 +23,3 @@ def main():
 
 if __name__ ==  "scraper":
     main()
-
-if __name__ == "__main__":
-    _browser = browser()
-    print(getPrice("https://www.amazon.com/Nintendo-Switch-Neon-Blue-Joy%E2%80%91/dp/B07VGRJDFY/ref=sr_1_1?dchild=1&fst=as%3Aoff&pf_rd_i=16225016011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=03b28c2c-71e9-4947-aa06-f8b5dc8bf880&pf_rd_r=WHTFPFNG9STV3JK4CVNG&pf_rd_s=merchandised-search-3&pf_rd_t=101&qid=1591017399&refinements=p_89%3ANintendo&rnid=2528832011&s=videogames-intl-ship&sr=1-1"))
