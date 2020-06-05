@@ -32,9 +32,9 @@ def checkPrices(schedule):
     
 
 if __name__ == "__main__": 
-    load_dotenv('./.env')
+    load_dotenv(os.path.abspath('.env'))
     telegram_bot = threading.Thread(name='Telegram_Bot', target=bot.main)
     main = threading.Thread(name='Main Thread', target=main)
-
+    
     telegram_bot.start()
     main.start()

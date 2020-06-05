@@ -1,10 +1,11 @@
 from classes import database
 from datetime import datetime
+import os
 db = None
 
 def main():
     global db
-    db = database('main.db')
+    db = database(os.path.abspath('main.db'))
     make_users_table()
     make_products_table()
     make_prices_table()
