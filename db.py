@@ -1,11 +1,11 @@
-from classes import database
+from classes import database, ROOT_DIR
 from datetime import datetime
 import os
 db = None
 
 def main():
     global db
-    db = database(os.path.abspath('main.db'))
+    db = database(os.path.join(ROOT_DIR, 'main.db'))
     make_users_table()
     make_products_table()
     make_prices_table()

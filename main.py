@@ -4,6 +4,7 @@ import scraper
 import threading
 import sched, time
 import os
+from classes import ROOT_DIR
 from dotenv import load_dotenv
 
 sleep = 3600/2
@@ -32,7 +33,7 @@ def checkPrices(schedule):
     
 
 if __name__ == "__main__": 
-    load_dotenv(os.path.abspath('.env'))
+    load_dotenv(os.path.join(ROOT_DIR, '.env'))
     telegram_bot = threading.Thread(name='Telegram_Bot', target=bot.main)
     main = threading.Thread(name='Main Thread', target=main)
     

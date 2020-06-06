@@ -2,6 +2,9 @@ import sqlite3
 from sqlite3 import Error
 import requests
 from lxml import html
+import os
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 class database:
     def __init__(self, db_file):
